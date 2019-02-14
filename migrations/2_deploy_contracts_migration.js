@@ -1,5 +1,5 @@
-var TokenFunc = artifacts.require("./TokenFunc.sol");
+var CharitychainFunc = artifacts.require("./CharityFunc.sol");
 
 module.exports = function(deployer) {
-  deployer.deploy(TokenFunc);
+  deployer.deploy(CharitychainFunc);
 };

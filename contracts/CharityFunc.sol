@@ -2,7 +2,7 @@ pragma solidity >=0.5.0;
 
 import "./TokenFunc.sol";
 
-contract CharitychainFunc is Token  {
+contract CharityFunc is Token  {
     
     address payable owner;
     struct godPeople {
@@ -10,6 +10,7 @@ contract CharitychainFunc is Token  {
         string password;
         string emailId;
         address payable godAdd;
+        bytes1 key;
     }
     
     constructor() public {
@@ -31,6 +32,19 @@ contract CharitychainFunc is Token  {
         userDonation[msg.sender].password = _password;
         userDonation[msg.sender].emailId = _emailId;
         userDonation[msg.sender].godAdd = msg.sender;
+        userDonation[msg.sender].key = 'u';
+        
+        
+        emit regSuccess(msg.sender,_name);
+    }
+    
+    function charityDetails(string memory _name,string memory _password,string memory _emailId) public {
+        
+        userDonation[msg.sender].name = _name;
+        userDonation[msg.sender].password = _password;
+        userDonation[msg.sender].emailId = _emailId;
+        userDonation[msg.sender].godAdd = msg.sender;
+        userDonation[msg.sender].key = 'c';
         
         emit regSuccess(msg.sender,_name);
     }
