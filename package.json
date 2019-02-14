@@ -1,0 +1,26 @@
+{
+  "name": "charitychain",
+  "version": "1.0.0",
+  "description": "The Dapp which helps millions of people around to join together to help each other and make the world a better place to live",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/mansoorop/charity-chain.git"
+  },
+  "author": "Akshay Srinivas",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://gitlab.com/mansoorop/charity-chain/issues"
+  },
+  "homepage": "https://gitlab.com/mansoorop/charity-chain#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.0",
+    "web3": "^1.0.0-beta.46"
+  }
+}
