@@ -1,4 +1,5 @@
 pragma solidity ^0.5.0;
+
 /**
  * @title Ownable
  * @dev The Ownable contract has an owner address, and provides basic authorization control
@@ -6,7 +7,9 @@ pragma solidity ^0.5.0;
  */
  
 contract Owner {
+    
   address public owner;
+  
   event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
   
   /**
@@ -38,4 +41,14 @@ contract Owner {
     emit OwnershipTransferred(owner, newOwner);
     owner = newOwner; 
   }
+  
+  
+  /**
+   * @dev Allows to return the address of the current Owner.
+   */  
+  
+    function returnOwnership() public view returns(address) {
+    return(owner);
+  }
+  
 }
