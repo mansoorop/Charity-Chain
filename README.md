@@ -54,7 +54,5 @@ Steps to install the application and use.
 15.Open browser :
     - https://localhost:4200
     
-The Installation & Working Demo can be viewd in the youtube video linked below,
 
-    - https://youtu.be/K763uQVgYAc
 
