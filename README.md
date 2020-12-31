@@ -21,7 +21,7 @@ Steps to install the application and use.
     - git init
 
 4.Clone the application from our repository :
-    - git clone https://gitlab.com/akshaysrinivas/charity-chain-angular
+    - git clone https://github.com/mansoorop/Charity-Chain.git
 
 5.Open the folder :
     - cd charity-chain-angular
